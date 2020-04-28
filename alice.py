@@ -12,7 +12,7 @@ def index():
     return 'Новый навык алисы'
 
 
-@app.route('/post', methods=['POST'])
+@app.route('/post', methods=['POST', 'GET'])
 def main():
     logging.info(f'Request: {request.json!r}')
 
